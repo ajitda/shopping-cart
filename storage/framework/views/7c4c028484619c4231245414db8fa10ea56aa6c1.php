@@ -14,8 +14,8 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primay btn-xs dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Reduce by 1</a></li>
-                                    <li><a href="#">Reduce all</a></li>
+                                    <li><a href="<?php echo e(route('product.reduceByOne', ['id' => $product['item']['id']])); ?>">Reduce by 1</a></li>
+                                    <li><a href="<?php echo e(route('product.remove', ['id' => $product['item']['id']])); ?>">Reduce all</a></li>
                                 </ul>
                             </div>
                         </li>
